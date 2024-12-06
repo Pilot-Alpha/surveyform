@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>Survey Form</title>
+  </head>
+  
+  <body>
+    
+    <h1 id="title">Survey Form</h1>
+ 
+    <hr>
+    <hr>
+ 
+    <div class="Description">
+      <p id ="description"> This survey is designed for getting a better information about my design of this page. You can drop any critiques as I am open to every comment. This is my first ever proper project since I started learning HTML. So this might not be my best one :'). But hopefully I am going to continue learning and go as far as I can. Wish me luck <3.</p>
+    </div>
+ 
+    <form id="survey-form">
+ 
+      <fieldset>
+ 
+        <legend>Your Informations</legend>
+ 
+        <label for="name" id="name-label">Name: <input class="fieldset1" id="name" type="text" placeholder="Enter your Name" required></input></label>
+        <label for="email" id="email-label">Email: <input class="fieldset1" id="email" type="email" placeholder="Enter your Mail" required></input></label>
+        <label for="number" id="number-label">Number: <input class="fieldset1" id="number" type="number" min="100000000" max="999999999" placeholder="Enter your number" required></input></label>
+ 
+      </fieldset>
+ 
+      <fieldset>
+ 
+        <legend>Your Comments</legend>
+ 
+        <div class="rating2"> 
+          <label> What do you think about my website?
+            <select id="dropdown">
+              <option value="">(Select One)</option>
+              <option value="Good">Good</option>
+              <option value="Could be a lot better">Could be a lot better</option>
+              <option value="Could be a lot worse">Could be a lot worse</option>
+            <select>
+          </label>
+        </div>
+ 
+        <div class="rating1">
+          <label> Which one of the following you think could've been better? (You can select multiple options)
+          <div class="checkbuttons">
+            <input type="checkbox" value="Interface" name="Feedback">Interface</input>
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Design" name="Feedback">Design</input>
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Color" name="Feedback">Color</input>
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Beauty" name="Feedback">Beauty</input>
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Details" name="Feedback">Details</input>
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Readablity" name="Feedback">Readablity</input> 
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Formal Language" name="Feedback">Formal Language</input>
+          </div>
+          <div class="checkbuttons">
+            <input type="checkbox" value="Lacking of awesomeness" name="Feedback">Lacking of awesomeness</input>
+          </div>
+          </label>
+        </div>
+      
+        <div class="rating2">
+          <label>
+            I don't know what to add in this checkbox thing. So let me tell you my aspiration and you can comment on that. I aspire to get
+            into a prestigious college abroad (I live in Bangladesh) and study CSE there. This is one of my dreams. So I think learning 
+            some web developments and programming beforehand might help me to get in to these colleges (I also learnt the basics of Python),
+            although I have no idea how far I can get in this programming within a year since I also have school exams pressure. So I am 
+            trying my level best to go as far as I can. Do you think as a beginner I did well on this HTML project?
+          
+            <div class="radiobuttons">
+              <input type="radio" value="Hell Yeah" name="decision">Hell Yeah</input>
+            </div>
+            <div class="radiobuttons">
+              <input type="radio" value="Yes" name="decision">Yeah</input>
+            </div>
+            <div class="radiobuttons">
+              <input type="radio" value="Maybe" name="decision">Maybe</input>
+            </div>
+            <div class="radiobuttons">
+              <input type="radio" value="No" name="decision">No</input>
+            </div>
+            <div class="radiobuttons">
+              <input type="radio" value="Hell no" name="decision">Hell no</input>
+            </div>
+          </label>
+        </div>
+        
+        <label>Any other comments you'd like to add? Feel free to do so. You can also give me some motivation. And with that being said, Good byeee. Wish me luck
+          <textarea></textarea>
+        </label>
+        
+        <label>
+          <input id="submit" type="submit"></input>
+        </label>
+      
+      </fieldset>
+    </form>
+  </body>
+<html>
